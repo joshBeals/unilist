@@ -14,12 +14,15 @@ const Universities = () => {
     const { loading, error, data } = useQuery(FETCH_COUNTRY, { variables: { code: params.id } });
 
     useEffect(() => {
-        if(!loading) fetchUniversities(data.country.name);
+        if(!loading){
+            if(data.country){
+                fetchUniversities(data.country.name);
+            }
+        }
     },[loading]);
 
     const fetchUniversities = async (country) => {
         const response = await axios.get(`http://universities.hipolabs.com/search?country=${country}`);
-        console.log(response.data);
         setUniversities(response.data);
     }
 
