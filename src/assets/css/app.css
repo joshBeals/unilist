@@ -5,7 +5,7 @@ body{
 }
 
 .spinner{
-    margin-top: 50px;
+    margin: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,8 +16,16 @@ span{
     color: orange;
 }
 
+.btn {
+    background-color: orange;
+}
+
+.card {  
+    animation: show 300ms ease-in-out;
+}
+
 .main{
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 .header{
@@ -27,7 +35,6 @@ span{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: show 300ms ease-in-out;
 }
 
 .header .inner{
@@ -47,11 +54,10 @@ span{
 
 .continent-main{
     animation: show 300ms ease-in-out;
+    margin-bottom: 100px;
 }
 
 .footer{
-    position: fixed;
-    bottom: 0;
     width: 100%;
     background: black;
     color: white;

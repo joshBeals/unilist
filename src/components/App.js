@@ -16,7 +16,7 @@ const App = () => {
                     <Route path="/" element={<Continent />} />
                 </Routes>
             </BrowserRouter>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 
