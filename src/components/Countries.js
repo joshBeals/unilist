@@ -32,7 +32,7 @@ const Countries = () => {
                             <img className='mb-3' src={`https://flagcdn.com/80x60/${country.code.toLowerCase()}.png`} alt={country.name} />
                             <h3 className="card-title">{country.name}</h3>
                             <p className="card-text">{country.capital}</p>
-                            <Link className="btn text-white" to={`/`}>See Universities</Link>
+                            <Link className="btn btn-sm text-white" to={`/universities/${country.code}`}>See Universities</Link>
                         </div>
                     </div>
                 </div>

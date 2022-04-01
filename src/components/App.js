@@ -5,6 +5,7 @@ import Header from './Header';
 import Continents from './Continents';
 import Footer from './Footer';
 import Countries from './Countries';
+import Universities from './Universities';
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<Continents />} />
                     <Route path="/countries/:id" element={<Countries />} />
+                    <Route path="/universities/:id" element={<Universities />} />
                 </Routes>
             </BrowserRouter>
             {/* <Footer /> */}

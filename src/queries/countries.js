@@ -17,3 +17,15 @@ export const FETCH_COUNTRIES = gql`
         }
     }
 `;
+
+export const FETCH_COUNTRY = gql`
+    query($code: ID!) {
+        country (code: $code) {
+            code
+            name
+            continent {
+                code
+            }
+        }
+    }
+`;
