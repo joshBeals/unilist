@@ -2,8 +2,9 @@ import '../assets/css/app.css';
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './Header';
-import Continent from './Continent';
+import Continents from './Continents';
 import Footer from './Footer';
+import Countries from './Countries';
 
 
 const App = () => {
@@ -13,7 +14,8 @@ const App = () => {
             <Header />
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Continent />} />
+                    <Route path="/" element={<Continents />} />
+                    <Route path="/countries/:id" element={<Countries />} />
                 </Routes>
             </BrowserRouter>
             {/* <Footer /> */}

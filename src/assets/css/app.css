@@ -16,6 +16,14 @@ span{
     color: orange;
 }
 
+.back-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: orange;
+    font-size: 30px;
+}
+
 .btn {
     background-color: orange;
 }
@@ -49,12 +57,13 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 0px 350px;
 }
 
 .continent-main{
     animation: show 300ms ease-in-out;
     margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 .footer{
@@ -79,8 +88,20 @@ span{
     }
 }
 
+@media screen and (max-width: 1500px) {
+    .header .inner{
+        padding: 0px 100px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .header{
-        height: 300px;
+        height: 400px;
+    }
+    .header .inner{
+        padding: 0px 20px;
+    }
+    .back-btn {
+        font-size: 18px;
     }
 }
