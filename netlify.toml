@@ -1,5 +1,5 @@
 [[redirects]]
-from = "http://universities.hipolabs.com/search"
-to = "http://universities.hipolabs.com/search:splat"
+from = "/university/*"
+to = "http://universities.hipolabs.com/:splat"
 status = 200
 force = true

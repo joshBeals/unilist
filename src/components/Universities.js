@@ -22,7 +22,7 @@ const Universities = () => {
     },[loading]);
 
     const fetchUniversities = async (country) => {
-        const response = await axios.get(`http://universities.hipolabs.com/search`, {
+        const response = await axios.get(`/university/search`, {
             params: {
                 country
             }
