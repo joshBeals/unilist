@@ -1,6 +1,6 @@
 import '../assets/css/app.css';
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Header from './Header';
 import Continents from './Continents';
 import Footer from './Footer';
@@ -13,13 +13,13 @@ const App = () => {
     return(
         <div className='main'>
             <Header />
-            <BrowserRouter>
+            <HashRouter>
                 <Routes>
                     <Route path="/" element={<Continents />} />
                     <Route path="/countries/:id" element={<Countries />} />
                     <Route path="/universities/:id" element={<Universities />} />
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
             {/* <Footer /> */}
         </div>
     );
